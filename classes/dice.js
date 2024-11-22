@@ -1,4 +1,3 @@
-// dice.js
 class Dice {
     constructor(values) {
         this.values = values;

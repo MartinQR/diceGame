@@ -5,9 +5,8 @@ const DiceParser = require('./classes/diceParser');
 try {
     const dices = process.argv.slice(2);
     const diceConfigs = DiceParser.parse(dices);
-    console.log(diceConfigs);
-    
     const game = new Game(diceConfigs);
+    
     game.start();
 
 
